@@ -776,7 +776,7 @@ label {
         top: 82%;
         flex-direction: column;
     }
-    header form .form-group{
+    header .form-index .form-group{
         width: 100%;
     }
     header form .btn-search{
