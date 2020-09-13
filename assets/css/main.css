@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+:root{
+    --first-color: rgb(198, 66, 89);
+    --second-color: rgb(255, 138, 92);
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header form .form-control{
+    border: none;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.sub-head {
+    color: var(--first-color);
+    border-right: 4px solid var(--second-color);
+}
+
+a,button {
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+a:focus,
+a:hover,
+button:hover {
+    text-decoration: none;
+}
+
+.global-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+button:focus, 
+input:focus, 
+select:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 2rem !important;
+}
+
+textarea {
+    resize: none !important;
+    border: none;
+    outline: none;
+}
+
+input, button {
+    border-radius: 2rem !important;
+}
+
+
+/*****************header*******************/
+header{
+    background: url(../img/bg@2x.png) no-repeat;
+    background-size: 100% 100%;
+    height: 90vh;
+}
+
+.btn-advertising i{
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.btn-advertising a:last-child{
+    color: #c94559;
+    background: #fff;
+    padding: 4px 2%;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+header .logo{
+    width: 300px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+header .logo-img{
+    width: 15%;
+    position: absolute;
+    top: 74%;
+    right: 33.5%;
+}
+
+header form{
+    background: linear-gradient(to right, rgb(198, 66, 89), rgb(255, 138, 92));
+    width: 90%;
+    padding:30px;
+    position: absolute;
+    top: 80vh;
+    right: 50%;
+    transform: translateX(50%);
+    box-shadow: 10px 10px 0.9rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+header .form-index .form-group{
+    width: 40%;
+}
+
+header form .form-control-lg,
+header form button{
+    border-radius: 25px;
+    border: none;
+    background: #fff;
+    font-size: 0.9rem;
+    height: calc(2.875rem + 2px);
+    padding: .5rem 1rem;
+}
+
+header form i,
+.nav-icon .form-group i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font-size: 1.8rem;
+    color: rgb(198, 66, 89);
+}
+
+header form i:focus,
+.nav-icon .form-group i:focus{outline: none;}
+
+header form .btn-search{
+    cursor: pointer;
+    width: 18%;
+}
+
+/*******************nav-icon**************************/
+.nav-bar-icon{
+    width: 87%;
+}
+
+.nav-icon{
+    width: 19%;
+    padding: 0.5%;
+}
+
+.nav-icon .nav-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.nav-icon .nav-a a{
+    color: #fff;
+}
+
+.nav-icon:first-child .nav-a,
+.nav-icon:nth-child(5) .nav-a{
+    background: linear-gradient(to bottom, var(--first-color), var(--second-color));
+}
+
+.nav-icon:nth-child(2) .nav-a,
+.nav-icon:nth-child(6) .nav-a{
+    background: linear-gradient(to bottom, var(--first-color), rgb(68, 68, 68));
+}
+
+.nav-icon:nth-child(3) .nav-a{
+    background: linear-gradient(to bottom, var(--second-color), rgb(68, 68, 68));
+}
+
+.nav-icon:nth-child(4) .nav-a{
+    background: linear-gradient(to bottom, rgb(14, 195, 215), rgb(30, 131, 140));
+}
+
+.nav-icon .dropdown .btn{
+    background: rgb(68, 68, 68);
+    color: #fff !important;
+    font-size: 0.6rem;
+    height: unset;
+    padding: 5px 7px;
+    border-radius: 20px;
+    text-align-last: center;
+    width: 100%;
+}
+
+.nav-icon .dropdown .btn:focus {
+    box-shadow: none;
+}
+
+.dropdown-toggle::after {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+/***************advertisement*********************/
+.advertisement h3{
+    color: var(--first-color);
+    border-right: 4px solid var(--second-color);
+    padding: 1px 10px;
+}
+
+.advertisement .card{
+    position: relative;
+    background: #f5f5f5;
+    border-radius: 5%;
+    box-shadow: 1px 1px 0.2rem 0.1rem rgba(0,0,0,0.1);
+}
+
+.advertisement .card-title{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.advertisement .card-info{
+    font-size: 1.2rem;
+}
+
+.advertisement .card-info i{
+    color: var(--first-color)
+}
+
+.advertisement .btn-more a{
+    padding: 5px 10%;
+    background: linear-gradient(to bottom, var(--first-color), var(--second-color));
+    color: #fff;
+    border-radius: 32px;
+    font-size: 1.3rem;
+}
+
+/*******************share-us*************************/
+.share-us{
+    background: var(--second-color);
+}
+
+.share-us h3{
+    color: #fff;
+    font-weight: 600;
+}
+
+.share-us form .form-control-lg,
+.share-us form button{
+    border-radius: 27px;
+    border: none;
+    background: #fff;
+    font-size: 1.2rem;
+    padding: 2rem 2.3rem;
+    font-weight: 600;
+} 
+
+.share-us form .btn-send{
+    cursor: pointer;
+    width: 45%;
+}
+
+.share-us form button{
+    padding: .5rem 1rem;
+    color: var(--second-color);
+}
+
+/********************footer*********************/
+footer{
+    background: var(--first-color);
+    color: #fff;
+    padding-bottom: 3rem;
+}
+
+footer .logo{
+    width: 160px;
+    margin: auto;
+    position: relative;
+}
+
+footer .logo-img{
+    width: 15%;
+    position: absolute;
+    top: 74%;
+    right: 32.5%;
+}
+
+footer p{
+    padding-top: 25px;
+    font-size: 0.8rem;
+}
+
+footer .nav-footer a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 3px 0;
+}
+
+footer i{
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+footer h6{
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+footer .down-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .down-app a{
+    background: #fff;
+    color: var(--first-color);
+    display: inline-flex;
+    width: 185px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 32px;
+}
+footer .down-app a i{
+    font-size: 1.8rem;
+    color: var(--second-color);
+}
+
+/******************car-page-details******************/
+.car-details{
+    background: #f5f5f5;
+}
+
+.car-details h2{
+    font-weight: 700;
+}
+
+.car-details h5{
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.car-details .image:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    top: 0;
+    right: 0;
+    border-radius: 5% 5% 0 0;
+}
+
+.car-details .image img{
+    width: 100%;
+}
+
+.car-details .image i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #f5f5f5;
+    font-size: 3.5rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.car-details .add-favour h5,
+.car-details .add-favour i{
+    color: var(--first-color);
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.car-details .send-report h5,
+.car-details .send-report i{
+    color: var(--second-color);
+    font-size: 1.5rem;
+}
+
+.car-details .send-report h5{
+    font-weight: normal;
+}
+
+.car-detail-aside h1{
+    color: var(--first-color);
+    background: #fff;
+    border-radius: 25px;
+    padding: 16px 0;
+    box-shadow: 1px 1px 0.2rem 0.1rem rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+.car-detail-aside .car-btn a{
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.car-detail-aside .car-btn a:first-child{
+    background: var(--first-color);
+}
+
+.car-detail-aside .car-btn a:last-child{
+    background: var(--second-color);
+}
+
+.car-detail-aside .seller{
+    background: #fff;
+    margin-top: 4rem;
+    padding: 20px 0 10px;
+    border-radius: 15px;
+}
+
+.car-detail-aside .seller i{
+    font-size: 2.5rem;
+    padding: 10px 0 0 10px;
+}
+
+.car-detail-aside .seller .seller-name{
+    color: var(--first-color);
+}
+
+.car-detail-aside .seller a{
+    display: block;
+    color: #111;
+}
+
+.car-details .car-info span{
+    display: flex;
+    background: #fff;
+    padding: 15px 15px 15px 0;
+    margin: 25px 0;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+.car-details .car-info h3{
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+.car-details .car-info form textarea{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.car-details .car-info .details,
+.car-details .car-info form textarea{
+    box-shadow: 1px 1px 0.2rem 0.1rem rgba(0,0,0,0.1);
+}
+
+.car-details .car-info form .btn-send button{
+    border-radius: 32px;
+    width: 250px;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 15px 0;
+    font-weight: 600;
+    box-shadow: 1px 5px 0.6rem 0.2rem rgba(0,0,0,0.1);
+    background: linear-gradient(to bottom,var(--first-color), var(--second-color));
+}
+
+.car-details .warning{
+    background: #646464;
+    color: #fff;
+    padding: 20px 10px;
+    border-radius: 15px;
+}
+
+.car-details .warning ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.car-details .warning ul li{
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.car-details .warning ul li::before{
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0;
+    background: var(--second-color);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+}
+
+.car-details .warning ul li span {
+    display: inline-block;
+    padding-right: .9rem;
+}
+
+/*********************login page**********************/
+.header-small{
+    height: 30vh;
+}
+
+.header-small .logo{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.regist-global{
+    background: #f5f5f5;
+}
+
+.regist-global .card-regist-global{
+    background: #fff;
+    height: 500px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 1px 1px 0.5rem 0.1rem rgba(0,0,0,0.1);
+}
+
+.regist-global .card-regist-global form{
+    width: 90%;
+    margin: auto;
+} 
+
+.regist-global .card-regist-global form i{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+}
+
+.regist-global .card-regist-global form .form-control{
+    padding: 30px 60px;
+    border-radius: 32px;
+    font-size: 1.5rem;
+    background: var(--first-color);
+    border: none;
+}
+
+.regist-global .card-regist-global form .form-control::placeholder{
+    color: #f2ccd3;
+}
+
+.regist-global .card-regist-global form a{
+    color: var(--first-color);
+}
+
+.regist-global .card-regist-global form .btn-send button{
+    border-radius: 32px;
+    width: 250px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    box-shadow: 1px 5px 0.6rem 0.2rem rgba(0,0,0,0.1);
+    background: var(--first-color);
+}
+
+.img-lock{
+    height: 500px;
+}
+
+.regist-global .regist-img{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--first-color), var(--second-color));
+}
+
+.regist-global .regist-img img{
+    width: 70%;
+}
+
+/*********************warming form******************/
+.warming-form p{
+    font-size: 0.8rem;
+    color: var(--first-color);
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.warming-form:before{
+    content: '';
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--second-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/********************cars page**********************/
+.form-car{
+    padding-bottom: 80px;
+    background: linear-gradient(to top, var(--first-color), var(--second-color));
+}
+
+.form-car .row{width: 95%;}
+
+.cars-page{
+    background: #f5f5f5;
+}
+
+.car-m{
+    margin-top: 30vh
+}
+
+.cars-page .pagination-lg .page-link{
+    padding: .5rem 1.2rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.5rem !important;
+    color: #fff;
+    background: var(--first-color);
+}
+
+.cars-page .pagination-lg .page-item:focus{
+    outline: none;
+}
+
+.cars-page .pagination-lg .page-link:focus{
+    box-shadow: none;
+}
+
+/**************** Start add-global-declaration ************/
+.add-global-declaration {
+    background: #f5f5f5;
+}
+
+.details-declaration {
+    background: #ececec;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+}
+
+.details-declaration .select-content i {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    font-size: 1.7rem;
+    color: var(--second-color);
+}
+
+.add-some-details h3 {
+    color: var(--second-color);
+    text-align: start;
+}
+
+.add-some-details .content-check {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.add-some-details .content-check .form-check {
+    width: 90%;
+    padding: 0;
+    user-select: none;
+}
+
+.add-some-details .content-check .form-check input {
+    display: none;
+}
+
+.add-some-details .content-check .form-check label {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 1rem;
+    margin: .5rem .3rem;
+    cursor: pointer;
+}
+
+.form-check label .checkmark {
+    display: flex;
+    position: relative;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: rgba(255, 138, 92, .6);
+    margin-right: .2rem;
+    cursor: pointer;
+}
+
+.form-check:hover input ~ label .checkmark {
+    background: var(--second-color);
+}
+  
+.form-check input:checked  ~ label .checkmark {
+    background: var(--second-color);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.form-check input:checked ~ label .checkmark:after {
+    display: block;
+}
+  
+.form-check .checkmark:after {
+    left: .56rem;
+    top: .19rem;
+    width: .5rem;
+    height: .875rem;
+    border: solid #fff;
+    border-width: 0 .187rem .187rem 0;
+    transform: rotate(45deg);
+}
+
+.form-btn {
+    margin: 2rem 0;
+}
+
+.form-btn .form-send {
+    color: #fff;
+    background: linear-gradient(180deg, var(--first-color), var(--second-color));
+    padding: .5rem 4rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+}
+
+/************** End add-global-declaration *************/
+
+/**************** Start add-special-declaration **************/
+.details-declaration .form-control {
+    color: var(--second-color)
+}
+
+/************** End add-special-declaration **************/
+label {
+    color: var(--second-color) !important;
+    font-size: 1.2rem;
+}
+/***********************media screen ****************/
+@media screen and (max-width:767px){
+    header{
+        height:40vh;
+    }
+    header .logo{
+        width: 200px;
+    }
+    header form{
+        top: 82%;
+        flex-direction: column;
+    }
+    header form .form-group{
+        width: 100%;
+    }
+    header form .btn-search{
+        width: 50%;
+    }
+    .nav-bar-icon{
+        width: 100%;
+        padding-top: 130px;
+    }
+    .share-us form{
+        width: 100% !important;
+    }
+    footer p{
+        text-align: center;
+        padding: 30px 25px 0;
+    }
+    footer .nav-footer{
+        text-align: center;
+    }
+    footer .down-app a{
+        width: 200px;
+        padding: 8px 10px;
+    }
+    .form-car{
+        padding-bottom: 0;
+    }
+    .form-car .row{
+        width: 100%;
+    }
+    .form-car .row .col-6,
+    .form-car .row .col-12{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .form-car i{
+        left: 4%;
+    }
+    .car-m{
+        margin-top: 50vh;
+    }
+    .header-small{
+        height: 30vh;
+    }
+    .regist-global .card-regist-global{
+        border-radius: initial;
+    }
+    .img-lock{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:780px){
+    .car-detail-aside .seller i{
+        padding: 10px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .add-some-details .content-check {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .add-some-details .content-check {
+        grid-template-columns: 75%;
+        margin-bottom: initial;
+    }
+
+    .add-some-details .content-check .form-check label {
+        justify-content: flex-end;
+    }
+}
